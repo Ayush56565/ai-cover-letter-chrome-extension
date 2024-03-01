@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "AI Cover Letter Generator",
+  "version": "1.0.0",
+  "description": "A Chrome extension to generate cover letters using Google's Gemini API.",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "scripting"
+  ],
+  "icons": {
+    "16": "image.png",
+    "48": "image.png",
+    "128": "image.png"
+  },
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Ai Cover Letter"
+  },
+  "host_permissions": [
+    "https://www.linkedin.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
